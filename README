@@ -3,6 +3,7 @@
 1.266 | c# (mono)| gmcs -out:cs_fibonachi.exe fibonachi.cs        | time ./cs_fibonachi.exe
 1.582 | go       | go build -o go_fibonachi fibonachi.go          | time ./go_fibonachi
 2.714 | node     | -                                              | time ./fibonachi.js
+7.819 | clojure  | -                                              | time ./fibonachi.clj
 12.16 | erlang   | erlc fibonachi.erl                             | time ./run.erl
 30.82 | ruby     | -                                              | time ./fibonachi.rb
 60.53 | python   | -                                              | time ./fibonachi.py
