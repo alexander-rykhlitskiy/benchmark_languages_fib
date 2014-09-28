@@ -4,8 +4,10 @@
 1.582 | go       | go build -o go_fibonachi fibonachi.go          | time ./go_fibonachi
 2.714 | node     | -                                              | time ./fibonachi.js
 7.819 | clojure  | -                                              | time ./fibonachi.clj
+8.865 | rbx-2.1.1| -                                              | time ruby fibonachi.rb
 12.16 | erlang   | erlc fibonachi.erl                             | time ./run.erl
-30.82 | ruby     | -                                              | time ./fibonachi.rb
+16.50 | jruby    | -                                              | time ruby fibonachi.rb
+30.82 | ruby-2.1 | -                                              | time ruby fibonachi.rb
 60.53 | python   | -                                              | time ./fibonachi.py
 ____________________________________________________________________________
 time  | language | compilation                                    | running
