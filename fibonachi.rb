@@ -1,4 +1,4 @@
-def fib x
+def fib(x)
   x < 2 ? x : fib(x - 1) + fib(x - 2)
 end
 
