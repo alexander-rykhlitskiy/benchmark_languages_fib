@@ -15,6 +15,7 @@ Time  | Language     | Compile                                      | Run |
 16.50 | **jruby**    | -                                            | time ruby fibonachi.rb |
 30.82 | **ruby-2.1** | -                                            | time ruby fibonachi.rb |
 60.53 | **python**   | -                                            | time ./fibonachi.py |
+107.5 | **R**        | -                                            | time Rscript fibonachi.R 34
 
 Each program was built and ran under ubuntu 14.04 amd64.
 Fibonachi function was written in this way only for educational purposes.
