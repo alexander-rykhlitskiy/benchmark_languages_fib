@@ -9,11 +9,11 @@ fn fib(x: i32) -> i32 {
 }
 
 fn main() {
-  let mut max_number = 39;
+  let mut max_number = 38;
   if let Some(input_number) = env::args().nth(1) {
     max_number = input_number.parse::<i32>().unwrap()
   }
-  for i in 0..max_number {
+  for i in 0..(max_number + 1) {
     println!("{} - {}", i, fib(i));
   }
 }
