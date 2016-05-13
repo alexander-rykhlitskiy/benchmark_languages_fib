@@ -1,0 +1,13 @@
+## Integer -> Integer
+def fib(x)
+  x < 2 ? x : fib(x - 1) + fib(x - 2)
+end
+
+max_number = 38
+
+# actually getting parameter this way should work, but it doesn't :(
+arg = ENV['max_number']
+unless arg.nil?
+  max_number = arg.to_i.to_fixnum!
+end
+(0..max_number).each { |i| puts "#{i} - #{fib(i)}" }

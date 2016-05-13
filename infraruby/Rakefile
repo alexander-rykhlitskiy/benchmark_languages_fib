@@ -1,0 +1,5 @@
+require "infraruby-task"
+
+loader = InfraRuby.task_loader
+loader.add_program("infraruby-main")
+loader.load_tasks

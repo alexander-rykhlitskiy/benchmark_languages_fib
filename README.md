@@ -9,6 +9,7 @@ Time  | Language     | Compile                                      | Run |
 1.582 | **go**       | go build -o go_fibonachi fibonachi.go                     | time ./go_fibonachi |
 1.643 | **clojure** (memoization)  | -                                           | time ./fibonachi_memoized.clj |
 2.714 | **nodeJS**   | -                                                         | time nodejs fibonachi.js |
+5.62  | **infraruby** | cd infraruby && bundle install && rake program:infraruby-main:core:compile | time (rake program:infraruby-main:core:execute) |
 7.819 | **clojure**  | -                                                         | time ./fibonachi.clj |
 8.865 | **rbx-2.1.1**| -                                                         | time ruby fibonachi.rb |
 12.16 | **erlang**   | erlc fibonachi.erl                                        | time ./run.erl |
