@@ -5,3 +5,6 @@ fibonachi.beam
 go_fibonachi
 infraruby/pool/
 infraruby/Gemfile.lock
+dotnet/project.lock.json
+dotnet/bin
+dotnet/obj

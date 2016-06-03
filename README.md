@@ -4,11 +4,12 @@ Time  | Language     | Compile                                      | Run |
 1.17 | **java**     | javac Fibonachi.java                                      | time java Fibonachi |
 1.19 | **rust**     | rustc fibonachi.rs -O -o rust_fibonachi                   | time ./rust_fibonachi |
 1.20 | **crystal**  | crystal build fibonachi.rb --release -o crystal_fibonachi | time ./crystal_fibonachi |
-1.27 | **c#** (mono)| gmcs -out:cs_fibonachi.exe fibonachi.cs                   | time ./cs_fibonachi.exe |
+1.27 | **c# (mono)** | gmcs -out:cs_fibonachi.exe fibonachi.cs                   | time ./cs_fibonachi.exe |
 1.55 | **scala**    | scalac scalac fibonachi.scala                             | time scala Fibonachi |
 1.58 | **go**       | go build -o go_fibonachi fibonachi.go                     | time ./go_fibonachi |
 1.64 | **clojure** (memoization)  | -                                           | time ./fibonachi_memoized.clj |
 2.71 | **nodeJS**   | -                                                         | time nodejs fibonachi.js |
+4.47 | **c# (.net)**     | dotnet restore && dotnet publish | time dotnet dotnet/bin/Debug/netcoreapp1.0/publish/dotnet.dll
 5.62  | **infraruby** | cd infraruby && bundle install && rake program:infraruby-main:core:compile | time (rake program:infraruby-main:core:execute) |
 7.82 | **clojure**  | -                                                         | time ./fibonachi.clj |
 8.87 | **rbx-2.1.1**| -                                                         | time ruby fibonachi.rb |
