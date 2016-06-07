@@ -13,7 +13,8 @@ Time  | Language     | Compile                                      | Run |
 5.62  | **infraruby** | cd infraruby && bundle install && rake program:infraruby-main:core:compile | time (rake program:infraruby-main:core:execute) |
 7.82 | **clojure**  | -                                                         | time ./fibonachi.clj |
 8.87 | **rbx-2.1.1**| -                                                         | time ruby fibonachi.rb |
-12.2 | **erlang**   | erlc fibonachi.erl                                        | time ./run.erl |
+9.32 | **erlang**   | erlc fibonachi.erl                                        | time ./run.erl |
+9.70 | **elixir**   | - | time elixir fibonachi.exs |
 16.5 | **jruby**    | -                                                         | time ruby fibonachi.rb |
 30.8 | **ruby-2.1** | -                                                         | time ruby fibonachi.rb |
 60.5 | **python**   | -                                                         | time ./fibonachi.py |
