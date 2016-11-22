@@ -17,6 +17,7 @@ Time  | Language     | Compile                                      | Run |
 9.70 | **elixir**   | - | time elixir fibonachi.exs |
 16.5 | **jruby**    | -                                                         | time ruby fibonachi.rb |
 30.8 | **ruby-2.1** | -                                                         | time ruby fibonachi.rb |
+44.4 | **haskell** | ghc -o hs_fibonachi fibonachi.hs                           | time ./hs_fibonachi |
 60.5 | **python**   | -                                                         | time ./fibonachi.py |
 107 | **R**        | -                                                         | time Rscript fibonachi.R 34
 
