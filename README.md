@@ -12,11 +12,14 @@ Time  | Language     | Compile                                      | Run |
 2.71 | **nodeJS**   | -                                                         | time nodejs fibonachi.js |
 4.47 | **c# (.net)** | cd dotnet && dotnet restore && dotnet publish && cd ..   | time dotnet dotnet/bin/Debug/netcoreapp1.0/publish/dotnet.dll
 5.62  | **infraruby** | cd infraruby && bundle install && rake program:infraruby-main:core:compile | time (rake program:infraruby-main:core:execute) |
+5.7  | **truffleruby-1.0.0-rc2**    | -                                         | time ruby fibonachi.rb |
 7.82 | **clojure**  | -                                                         | time ./fibonachi.clj |
 8.87 | **rbx-2.1.1**| -                                                         | time ruby fibonachi.rb |
 9.32 | **erlang**   | erlc fibonachi.erl                                        | time ./run.erl |
 9.70 | **elixir**   | - | time elixir fibonachi.exs |
+10.5 | **ruby-2.6 jit** | -                                                         | time ruby --jit fibonachi.rb |
 16.5 | **jruby**    | -                                                         | time ruby fibonachi.rb |
+25   | **ruby-2.6** | -                                                         | time ruby fibonachi.rb |
 30.8 | **ruby-2.1** | -                                                         | time ruby fibonachi.rb |
 43.7 | **lua**      | -                                                         | time lua fibonachi.lua |
 44.4 | **haskell** | ghc -o hs_fibonachi fibonachi.hs                           | time ./hs_fibonachi |
