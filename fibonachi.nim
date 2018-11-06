@@ -1,7 +1,7 @@
 import os, strutils
 
 func fib(n: uint64): uint64 {.inline.} =
-  if n <= 1: return 1
+  if n <= 1: return n
   return fib(n - 1) + fib(n - 2)
 
 let n = if paramCount() == 1: paramStr(1).parseInt.uint64 else: 38
