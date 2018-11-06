@@ -5,4 +5,4 @@ func fib(n: uint64): uint64 {.inline.} =
   return fib(n - 1) + fib(n - 2)
 
 for i in 0..paramStr(1).parseint.uint64:
-  echo fib(i)
+  echo i, '-', fib(i)
