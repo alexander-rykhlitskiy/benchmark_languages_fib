@@ -6,4 +6,4 @@ func fib(n: uint64): uint64 {.inline.} =
 
 let n = if paramCount() == 1: paramStr(1).parseInt.uint64 else: 38
 for i in 0..n:
-  echo i, '-', fib(i)
+  echo i, " - ", fib(i)
