@@ -1,5 +1,6 @@
 Time  | Language     | Compile                                      | Run |
 |---|---|---|---|
+0.40 | **nim**      | nim c -d:release --opt:speed --passL:-s --passL:-openmp --passC:-openmp --gc:markAndSweep fibonachi_parallel_for.nim | time ./fibonachi |
 0.65 | **nim**      | nim c -d:release --opt:speed --passL:-s --gc:markAndSweep fibonachi.nim | time ./fibonachi |
 0.98 | **c**        | gcc -o c_fibonachi -O3 -std=gnu99 fibonachi.c             | time ./c_fibonachi |
 1.17 | **java**     | javac Fibonachi.java                                      | time java Fibonachi |
