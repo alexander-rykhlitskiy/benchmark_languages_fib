@@ -1,5 +1,4 @@
-import strutils
-from os import paramCount, paramStr
+import strutils, os
 
 func fib(n: uint32): uint32 {.inline.} =
   if unlikely(n <= 1):
